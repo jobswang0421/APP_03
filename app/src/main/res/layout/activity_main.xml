@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -6,13 +5,145 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
+    <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/ACCOUNT"
+            android:layout_width="270dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="50dp"
+            android:hint="ACCOUNT"
+            android:inputType="text" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/PASSWORD"
+            android:layout_width="270dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:hint="PASSWORD"
+            android:inputType="textPassword" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/NAME"
+            android:layout_width="270dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:hint="NAME"
+            android:inputType="textPersonName" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/EMAIL"
+            android:layout_width="270dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:hint="EMAIL"
+            android:inputType="textEmailAddress" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/PHONE"
+            android:layout_width="270dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:hint="PHONE"
+            android:inputType="phone" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/BIRTHDATE"
+            android:layout_width="270dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:hint="BIRTHDATE"
+            android:inputType="date" />
+
+        <LinearLayout
+            android:layout_width="270dp"
+            android:layout_height="100dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/GENDER"
+                android:layout_width="135dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:text="GENDER" />
+
+            <RadioGroup
+                android:id="@+id/GENDERGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/MALE"
+                    android:layout_width="135dp"
+                    android:layout_height="wrap_content"
+                    android:text="Ｍ" />
+
+                <RadioButton
+                    android:id="@+id/FEMALE"
+                    android:layout_width="135dp"
+                    android:layout_height="wrap_content"
+                    android:text="Ｆ" />
+
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="270dp"
+            android:layout_height="150dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/INTEREST"
+                android:layout_width="135dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:text="INTEREST" />
+
+            <RadioGroup
+                android:id="@+id/INTERESTGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="150dp"
+                android:orientation="vertical">
+
+                <CheckBox
+                    android:id="@+id/INTEREST1"
+                    android:layout_width="135dp"
+                    android:layout_height="wrap_content"
+                    android:text="SPORT" />
+
+                <CheckBox
+                    android:id="@+id/INTEREST2"
+                    android:layout_width="135dp"
+                    android:layout_height="wrap_content"
+                    android:text="STUDY" />
+
+                <CheckBox
+                    android:id="@+id/INTEREST3"
+                    android:layout_width="135dp"
+                    android:layout_height="wrap_content"
+                    android:text="SLEEP" />
+
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/SEND"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SEND" />
+
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
