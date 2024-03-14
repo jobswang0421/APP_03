@@ -1,3 +1,18 @@
 <resources>
-    <string name="app_name">APP_03</string>
+    <string name="app_name">LIST</string>
+    <string name="account">ACCOUNT</string>
+    <string name="password">PASSWORD</string>
+    <string name="name">NAME</string>
+    <string name="email">EMAIL</string>
+    <string name="phone">PHONE</string>
+    <string name="birthday">BIRTHDAY YYYY-MM-DD</string>
+    <string name="gender">GENDER</string>
+    <string name="interest">INTEREST</string>
+    <string name="send">SEND</string>
+    <string name="male">M</string>
+    <string name="female">F</string>
+    <string name="sport">SPORT</string>
+    <string name="study">STUDY</string>
+    <string name="sleep">SLEEP</string>
+    <string name="idk">COMBAT HELICOPTER</string>
 </resources>
