@@ -15,4 +15,7 @@
     <string name="study">STUDY</string>
     <string name="sleep">SLEEP</string>
     <string name="idk">COMBAT HELICOPTER</string>
+    <string name="bd">BIRTHDAY</string>
+    <string name="check">CHECK</string>
+    <string name="ok">OK</string>
 </resources>

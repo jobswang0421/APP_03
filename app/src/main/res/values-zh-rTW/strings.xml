@@ -4,7 +4,7 @@
     <string name="account">帳號</string>
     <string name="password">密碼</string>
     <string name="name">姓名</string>
-    <string name="email">電子信箱</string>
+    <string name="email">信箱</string>
     <string name="phone">手機</string>
     <string name="birthday">生日 西元年份-月份-日期</string>
     <string name="gender">性別</string>
@@ -16,4 +16,7 @@
     <string name="study">讀書</string>
     <string name="sleep">睡覺</string>
     <string name="idk">戰鬥直升機</string>
+    <string name="bd">生日</string>
+    <string name="check">確認資訊</string>
+    <string name="ok">確定</string>
 </resources>
