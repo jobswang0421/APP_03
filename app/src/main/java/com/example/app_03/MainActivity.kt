@@ -46,7 +46,7 @@ class MainActivity : AppCompatActivity() {
             msg += getString(R.string.bd)+": ${applyDate.text}\n"
 
             val selectedGenderId = radGrp_Gender.checkedRadioButtonId
-            val gender = when (selectedGenderId) {
+            when (selectedGenderId) {
                 R.id.MALE -> msg += getString(R.string.gender)+": "+getString(R.string.male)+"\n"
                 R.id.FEMALE -> msg += getString(R.string.gender)+": "+getString(R.string.female)+"\n"
                 else -> msg += getString(R.string.gender)+": "+getString(R.string.idk)+"\n"
